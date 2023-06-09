@@ -1,0 +1,385 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&family=Ysabeau:ital,wght@1,200&display=swap');
+
+:root {
+  --main-color: #025464;
+  --border: 1px solid orange;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: 0.2s ease;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+html::-webkit-scrollbar {
+  /* Kaydırma çubuklarının(scrollbars) kapladığı alanı tanımlamak için kullanılır. Verilen width değeri ekranın sağ tarafında çıkan scroll un genişlik değerini ayarlar. height ise sayfanın altında çıkan scroll un yükseklik değerini ayarlar*/
+  width: 10px;
+  background-color: rgb(255, 255, 255);
+}
+html::-webkit-scrollbar-thumb {
+  /* Kaydırma çubuğunun tutamacının özelliklerine etki etmek için kullanılır.*/
+  background-color: rgb(2, 2, 2);
+  border-radius: 30px;
+}
+body {
+  background-color: var(--main-color);
+}
+
+section {
+  padding: 30px 7%;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn {
+  background-color: #e57c23;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+}
+.search-input {
+  font-size: 15px;
+  color: black;
+  padding: 10px;
+  text-transform: none;
+  border-radius: 30px;
+}
+.heading {
+  color: white;
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid white;
+}
+
+/* header start ------------------*/
+
+.header .logo img {
+  height: 80px;
+  width: 80px;
+}
+
+.header {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7%;
+  margin: 15px 6%;
+  position: sticky;
+  border-radius: 100px;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.75);
+}
+.header .navbar a {
+  margin: 0 10px;
+  border-bottom: 1px solid transparent;
+  font-size: 18px;
+  font-weight: bold;
+  color: #025464;
+  padding: 5px 10px;
+  border-radius: 15px;
+  transition: all 1s ease;
+}
+.header .navbar a:hover {
+  background-color: #025464;
+  color: #e57c23;
+}
+
+.header .buttons button {
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+/*! header end -------------------*/
+
+
+/*! section start-----------------*/
+
+.home {
+  min-height: 100vh;
+  background: url(../images/Ev-Fotoğrafları.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: -145px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home .content {
+  max-width: 600px;
+}
+.home .content h3 {
+  font-size: 55px;
+  color: #e57c23;
+}
+
+.home .content p {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 25px; /* satır arası boşluk */
+  color: #000000;
+}
+.search-form {
+  position: absolute;
+  background-color: white;
+  top: 28%;
+  left: 32%;
+  width: 500px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  box-shadow: 0 0 20px 3px rgb(0 0 0 /75%);
+  /* transform: scaleY(0); translateY : Y eksenindeki konumunu değiştirmek için*/
+}
+
+.search-form i {
+  cursor: pointer;
+  font-size: 22px;
+  margin-right: 35px;
+  color: rgb(235, 164, 33);
+}
+.search-form input {
+  width: 100%;
+}
+/*!   -------section end---------------------*/
+
+
+/*! ---------------kiralık start------------*/
+
+.kiralik .box-container{
+  display: grid;
+  gap: 15px;
+  grid-template-columns:  repeat(auto-fit, minmax(200px,1fr));
+}
+.kiralik .box-container .box{
+  padding: 30px;
+  background-color: beige;
+  border-radius: 30px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.kiralik .box-container .box img{
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
+}
+.kiralik .box-container .box .category{
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+ 
+.kiralik .box-container .box h3{
+  font-size: 20px;
+  padding: 10px 0px;
+}
+
+.kiralik .box-container .box .price{
+  font-size: 18px;
+  padding: 5px 0px;
+  font-weight: 600;
+}
+.not i{
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  color: #025464;
+}
+/* -----------------------city--------------------*/
+
+.city{
+  background-color: #e57c23;
+}
+.city .box-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+}
+.city .box-container .box{
+  text-align: center;
+  position: relative;
+  border-radius: 30px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+.city .box-container .box .box-head{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+.city .box-container .box .box-head .title{
+  font-size: 13px;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 10px;
+}
+.city .box-container .box .box-head .name{
+  font-size: 15px;
+  font-weight: bold;
+  text-align: start;
+  color: #fafafa;
+  padding: 10px 0;
+}
+
+/*! -----------image overlay yapımı -----*/
+
+.city .box-container .box .box-head .image{
+  position: relative ;
+  width: 220px;
+  margin: 0px 20px;
+  
+}
+.city .box-container .box .box-head .image__img{
+  display: block;
+  width: 100%;
+  border-radius: 50px;
+  height: 250px;
+}
+.city .box-container .box .box-head .image__overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fafafa;
+  background-color: rgb(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  opacity: 0;
+  transition: all 1.25 ease;
+}
+/* alttan yazı ve button getirmek için translate y kullandık*/
+.city .box-container .box .box-head .image__overlay > *{
+  transform:  translateY(20px);
+  transition: transform 1.25s;
+}
+.city .box-container .box .box-head .image__overlay:hover > *{
+  transform: translateY(0);
+}
+.city .box-container .box .box-head .image__overlay:hover{
+  opacity: 1;
+}
+
+.city .box-container .box .box-head .image__title{
+  font-size: 2em;
+  font-weight: bold;
+}
+.city .box-container .box .box-head .image__overlay button{
+  font-size: 13px;
+  padding: 6px 25px;
+  color: #fafafa;
+  background-color: #025464;
+}
+/*!   -------city  end---------------------*/
+
+/*!   -------about start---------------------*/
+
+
+.haber .row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.haber .row .image img{
+  width: 300px;
+  height: auto;
+  border-radius: 30px;
+}
+
+.haber .content h3{
+  font-size: 20px;
+  color: white;
+  margin-left: 50px;
+}
+
+.haber .content p{
+  font-weight: bold;
+  margin: 10px 50px;
+  color: white;
+  line-height: 30px;
+}
+.haber .content .btn {
+  margin: 10px 50px;
+}
+
+/* ek start-----------------------------*/
+
+.ek{
+  background-color: #e57c23;
+}
+.ek .container {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.ek .container .row{
+ text-align: left;
+ padding: 20px;
+ display: flex;
+ flex-direction: column;
+}
+.ek .container .row a{
+  margin: 5px;
+}
+
+/* dipnot */
+.dipnot .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+ .dipnot .container .title{
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+}
+.dipnot .icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dipnot .icons i{
+ font-size: 25px;
+  color: #fafafa;
+  margin: 5px 15px;
+}

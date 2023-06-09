@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://kit.fontawesome.com/96c5648553.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- -----------------header-------------------- -->
+    <header class="header">
+      <a href="#home" class="logo">
+        <img src="images/ev.jpg" />
+      </a>
+      <nav class="navbar active">
+        <a href="#satilik">satılık </a>
+        <a href="#kiralik">kiralık</a>
+        <a href="#haber">haberler</a>
+        <a href="#city">şehirler</a>
+      </nav>
+      <div class="buttons">
+        <button class="btn"><i class="fas fa-person"></i> Girişi Yap</button>
+        <button class="btn">
+          <i class="fas fa-arrow-right"></i> Ücretsiz İlan Ver
+        </button>
+      </div>
+    </header>
+    <!-- -----------------home------------------------------- -->
+    <section class="home" id="home">
+      <div class="content">
+        <h3>HEPSİ EMLAK JET</h3>
+        <p>Satılık, Kiralık Ev & Emlak İlanları</p>
+      </div>
+      <div class="search-form">
+        <input
+          type="text"
+          class="search-input"
+          id="search-box"
+          placeholder="arayın"
+        />
+        <i class="fas fa-search"></i>
+      </div>
+    </section>
+    <!-- -----------------kiralik-------------------------- -->
+    <section class="kiralik" id="kiralik">
+      <h1 class="heading">Öne Çıkan <span>İlanlar</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="box-head">
+            <img src="images/ev1.jpg" alt="" />
+            <span class="category">istanbulda havuzlu ev</span>
+            <h3>bostanlı mahalesi / karşiyaka</h3>
+            <div class="not">
+              <i class="fa-solid fa-house"> müstakil</i>
+              <i class="fa-solid fa-couch"> 3 + 1 </i>
+            </div>
+            <div class="price">10.000$</div>
+          </div>
+          <div class="box-btn">
+            <a href="#" class="btn">İlana Bak</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img src="images/ev2.jpg" alt="" />
+            <span class="category">istanbulda havuzlu ev</span>
+            <h3>bostanlı mahalesi / karşiyaka</h3>
+            <div class="not">
+              <i class="fa-solid fa-house"> müstakil</i>
+              <i class="fa-solid fa-couch"> 3 + 1 </i>
+            </div>
+            <div class="price">10.000$</div>
+          </div>
+          <div class="box-btn">
+            <a href="" class="btn">İlana Bak</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img src="images/ev3.jpg" alt="" />
+            <span class="category">istanbulda havuzlu ev</span>
+            <h3>bostanlı mahalesi / karşiyaka</h3>
+            <div class="not">
+              <i class="fa-solid fa-house"> müstakil</i>
+              <i class="fa-solid fa-couch"> 3 + 1 </i>
+            </div>
+            <div class="price">10.000$</div>
+          </div>
+          <div class="box-btn">
+            <a href="" class="btn">İlana Bak</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img src="images/ev4.jpg" alt="" />
+            <span class="category">istanbulda havuzlu ev</span>
+            <h3>bostanlı mahalesi / karşiyaka</h3>
+            <div class="not">
+              <i class="fa-solid fa-house"> müstakil</i>
+              <i class="fa-solid fa-couch"> 3 + 1 </i>
+            </div>
+            <div class="price">10.000$</div>
+          </div>
+          <div class="box-btn">
+            <a href="" class="btn">İlana Bak</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -----------------city-------------------------- -->
+    <section class="city" id="city">
+      <h1 class="heading">İlan Verilen <span> Şehirler</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="box-head">
+            <div class="image">
+              <img class="image__img" src="images/ankara.jpg" alt="" />
+              <div class="image__overlay">
+                <div class="image__title">istanbul</div>
+                <button class="btn">satılık</button>
+                <button class="btn">kiralık</button>
+              </div>
+            </div>
+            <span class="title"> Eski İlan </span>
+            <h3 class="name">35.000'den fazla ilan</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <div class="image">
+              <img class="image__img" src="images/izmir.jpg" alt="" />
+              <div class="image__overlay">
+                <div class="image__title">Düzce</div>
+                <button class="btn">satılık</button>
+                <button class="btn">kiralık</button>
+              </div>
+            </div>
+            <span class="title"> Eski İlan </span>
+            <h3 class="name">78.000'den fazla ilan</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <div class="image">
+              <img class="image__img" src="images/istanbul.jpg" alt="" />
+              <div class="image__overlay">
+                <div class="image__title">Ankara</div>
+                <button class="btn">satılık</button>
+                <button class="btn">kiralık</button>
+              </div>
+            </div>
+            <span class="title"> Yeni İlan </span>
+            <h3 class="name">20.000'den fazla ilan</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <div class="image">
+              <img class="image__img" src="images/istanbul.jpg" alt="" />
+              <div class="image__overlay">
+                <div class="image__title">Bursa</div>
+                <button class="btn">satılık</button>
+                <button class="btn">kiralık</button>
+              </div>
+            </div>
+            <span class="title"> Eski İlan </span>
+            <h3 class="name">6.000'den fazla ilan</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <div class="image">
+              <img class="image__img" src="images/izmir.jpg" alt="" />
+              <div class="image__overlay">
+                <div class="image__title">izmir</div>
+                <button class="btn">satılık</button>
+                <button class="btn">kiralık</button>
+              </div>
+            </div>
+            <span class="title"> Yeni İlan </span>
+            <h3 class="name">10.000'den fazla ilan</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------about-------------- -->
+
+    <section class="haber" id="haber">
+      <h1 class="heading">Emlak<span> Haberleri</span></h1>
+      <div class="row">
+        <div class="image">
+          <img src="images/ev4.jpg" alt="about" />
+        </div>
+        <div class="content">
+          <h3>İstanbulda en çok beğenilen konutlar...</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo nulla
+            alias doloribus! Et accusantium, non, eos in inventore nemo fugit
+            expedita aut, natus veniam nisi. Deserunt provident alias hic quis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+            quisquam vero quam suscipit perferendis odit non sunt corrupti vel
+            quia sequi architecto, porro qui quis repellendus reprehenderit, eum
+            blanditiis incidunt!
+          </p>
+          <a href="#" class="btn"> Devamını Oku</a>
+        </div>
+      </div>
+    </section>
+<!-- ek-------------ek--------------------- -->
+    <section class="ek" id="ek">
+      <div class="container">
+        <div class="column">
+          <div class="row">
+            <h2 class="title">Hepsi emlak jet</h2>
+            <a href="">Hakkımızda</a>
+            <a href="">Ödüllerimiz</a>
+            <a href="">Kurumsal</a>
+            <a href="">Materyaller</a>
+            <a href="">Reklam</a>
+            <a href="">İnsan Hakları</a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="row">
+            <h2 class="title">Hizmetlerimiz</h2>
+            <a href="">Size Özel Hizmetlerimiz</a>
+            <a href="">Emlak Haberleri</a>
+            <a href="">Ücretsiz ilan Ver</a>
+            <a href="">Materyaller</a>
+            <a href="">Projeler</a>
+            <a href="">Konut Kredisi Hesaplama</a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="row">
+            <h2 class="title">Diğer</h2>
+            <a href="#">İlan Yayınlama Kuralları</a>
+            <a href="">Kullanım Koşulları</a>
+            <a href="">Üyelik Sözleşmesi ve Gizlilik Politikası</a>
+            <a href="">Çerez Politikası</a>
+            <a href="">Açık Rıza Metni</a>
+            <a href="">Çalışan Adayı Aydınlatma Metni</a>
+            <a href="">İşlem Rehberi</a>
+          </div>
+        </div>
+    
+      </div>
+    </section>
+    <section class="dipnot">
+      <div class="container">
+        <h4 class="title">
+          HepsiEmlakJet.com © 2006-2023 HepsiEmlakjet.com sitesinde kullanıcılar
+          tarafından sağlanan her türlü ilan, bilgi, içerik ve görselin
+          gerçekliği, orijinalliği, güvenilirliği ve doğruluğuna ilişkin
+          sorumluluk bu içerikleri giren kullanıcıya ait olup, hepsiemlakjet.com'un
+          bu hususlarla ilgili herhangi bir sorumluluğu bulunmamaktadır.
+        </h4>
+      </div>
+      <div class="icons">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-amazon"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+    </section>
+    
+
+    <script src="main.js"></script>
+  </body>
+</html>
